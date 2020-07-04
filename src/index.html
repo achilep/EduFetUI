@@ -1,73 +1,20 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
-    <link rel="stylesheet" type="text/css" href="index.css" />
-  </head>
-  <body>
-    <div class="content">
-        <img class="wave" src="img/wave.png">
-        <div class="container">
-            <div class="img">
-                <div class="titles">
-                    <h1>Student Managment <br> System</h1>
-                </div>
-            </div>
-            <div class="topcorner">
-                <select name="level" id="level">
-                    <option class="specialColor" value="Admin">Admin</option>
-                    <option class="specialColor" value="Teacher">Teacher</option>
-                    <option class="specialColor" value="Student">Student</option>
-                  </select>
-            </div>
-            <div class="login-content">
-                <form action="index.html">
-                    <img src="img/avatar.svg">
-                    <h2 class="title">Welcome</h2>
-                       <div class="input-div one">
-                          <div class="i">
-                                  <i class="fas fa-user"></i>
-                          </div>
-                          <div class="div">
-                                  <h5>Username</h5>
-                                  <input type="text" class="input">
-                          </div>
-                       </div>
-                       <div class="input-div pass">
-                          <div class="i"> 
-                               <i class="fas fa-lock"></i>
-                          </div>
-                          <div class="div">
-                               <h5>Password</h5>
-                               <input type="password" class="input">
-                       </div>
-                       
-                    </div>
-                    
-                    <a href="#">Forgot Password?</a>
-                    <input type="submit" class="btn" value="Login">
-                </form>
-            </div>
-        </div>
-    </div>
-    <div class="loader-wrapper">
-      <br>
-      <h1>Welcome</h1>
-      <br>
-      <br>
-      <span class="loader"><span class="loader-inner"><br></span></span>
-      <br>
-      <br>
-      <h1>Version 0.1</h1>
-    </div>
-    <script>
-        $(document).ready(function(){
-          $(".loader-wrapper").fadeOut(8000);
-        });
-    </script>
-    <script type="text/javascript" src="js/main.js"></script>
-  </body>
+<!doctype html>
+<html lang="en">
+
+
+<head>
+  <meta charset="utf-8">
+  <title> EAGLE  </title>
+
+
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="icon"  href="favicon.ico"> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <app-root></app-root>
+</body>
 </html>

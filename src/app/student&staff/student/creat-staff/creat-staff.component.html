@@ -1,0 +1,88 @@
+<div class="container mt-4 w-50 text-center">
+    <div class="alert alert-primary txet-center" role="alert">
+      <h3 class="text-center"> Create Student </h3>
+    </div>
+    <form [formGroup] ="form" (ngSubmit) = 'createStudent(form.value)'>
+      <div class="col-md-12 ">
+              
+        <div class="form-group">
+          <input formControlName="phone" id="phone" type="text" class="form-control"
+            placeholder="Phone">
+          <div class="alert alert-info" >
+            please ! enter your phone
+          </div>
+        </div>
+                <!-- <input [(ngModel)]="emp.level" type="text" class="form-control" placeholder="Level"> -->
+        <div class="form-group">
+          <input formControlName="empname" id="empname" type="text" class="form-control"
+            placeholder="empname">
+          <div class="alert alert-info" >
+            please ! enter your empname
+          </div>
+        </div>
+        <div class="form-group">
+          <input formControlName="sex" id="sex" type="text" class="form-control"
+            placeholder="sex">
+          <div class="alert alert-info" >
+            please ! enter your sex
+          </div>
+        </div>
+        <div class="form-group">
+          <input formControlName="address" id="address" type="text" class="form-control"
+            placeholder="address">
+          <div class="alert alert-info" >
+            please ! enter your address
+          </div>
+        </div>
+        <div class="form-group">
+          <input formControlName="dept" id="dept" type="text" class="form-control"
+            placeholder="dept">
+          <div class="alert alert-info" >
+            please ! enter your dept
+          </div>
+        </div>
+        <div class="form-group">
+          <input formControlName="mobile" id="mobile" type="text" class="form-control"
+            placeholder="mobile">
+          <div class="alert alert-info" >
+            please ! enter your phone
+          </div>
+        </div>
+        <div class="form-group">
+          <input formControlName="email" id="email" type="text" class="form-control"
+            placeholder="email">
+          <div class="alert alert-info" >
+            please ! enter your email
+          </div>
+        </div>
+        <div class="form-group">
+          <input formControlName="stat" id="stat" type="text" class="form-control"
+            placeholder="stat">
+          <div class="alert alert-info" >
+            please ! enter your stat
+          </div>
+        </div>
+        <div class="form-group">
+          <input formControlName="city" id="city" type="text" class="form-control"
+            placeholder="city">
+          <div class="alert alert-info" >
+            please ! enter your city
+          </div>
+        </div>
+        
+       
+        <div class="form-group">
+          <button type = 'submit'class="btn btn-info btn-lg btn-block"> Create</button>
+        </div>
+      </div>
+    </form>
+  
+  
+    <div class="alert alert-info">
+      <h3> wolcome in our school ,<br>
+        you can choose your courses now ! </h3>
+  
+    </div>
+  
+    
+  </div>
