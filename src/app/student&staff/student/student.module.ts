@@ -6,11 +6,13 @@ import { RouterModule } from '@angular/router';
 import { FormsModule, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from 'src/app/app-routing.module';
 import { CreatStaffComponent } from './creat-staff/creat-staff.component';
+import { GetallStaffComponent } from './getall-staff/getall-staff.component';
+import { GetallStudentComponent } from './getall-student/getall-student.component';
 
 
 
 @NgModule({
-  declarations: [CreatStudentComponent, CreatStaffComponent],
+  declarations: [CreatStudentComponent, CreatStaffComponent, GetallStaffComponent, GetallStudentComponent],
   imports: [
     CommonModule,
     HttpClientModule,
@@ -19,6 +21,6 @@ import { CreatStaffComponent } from './creat-staff/creat-staff.component';
     ReactiveFormsModule,
     AppRoutingModule
   ],
-  exports: [CreatStudentComponent,CreatStaffComponent]
+  exports: [CreatStudentComponent,CreatStaffComponent,GetallStaffComponent,GetallStudentComponent]
 })
 export class StudentModule { }

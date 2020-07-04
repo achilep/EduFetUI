@@ -21,8 +21,17 @@ export class StudentService {
 
   constructor(private http: HttpClient) { }
 
-  get(): Observable<Student> {
-    return this.http.get<Student>(this.restAPIURL)
+  getstudent(): Observable<Student> {
+    return this.http.get<Student>(this.restAPIURL+'/api/student')
+      .pipe
+      (
+        retry(1),
+        catchError(this.handelError)
+
+      );
+  }
+  getstaff(): Observable<Staff> {
+    return this.http.get<Staff>(this.restAPIURL+'/api/staff')
       .pipe
       (
         retry(1),
@@ -60,8 +69,17 @@ export class StudentService {
       );
   }
 
-  delete(id) {
-    return this.http.delete<Student>(this.restAPIURL + '/' + id)
+  deletestudent(id) {
+    return this.http.delete<Student>(this.restAPIURL + '/api/student/' + id)
+      .pipe
+      (
+        retry(1),
+        catchError(this.handelError)
+
+      );
+  }
+  deletestaff(id) {
+    return this.http.delete<Student>(this.restAPIURL + '/api/staff/' + id)
       .pipe
       (
         retry(1),

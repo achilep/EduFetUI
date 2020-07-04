@@ -1,0 +1,35 @@
+<div class="container mt-5">
+    <div class="alert alert-info txet-center  mt-5" role="alert">
+      <h3 class="text-center"> list OUR student in the school </h3>
+    </div>
+    <table class="table" id="emp">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">ID </th>
+          <th scope="col">NAME </th>
+          <th scope="col">Email </th>
+          <th scope="col">PHONE</th>
+          <th scope="col"> Address </th>
+          
+
+          <th scope="col">ACTION</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let stud of Sudent">
+          <td> {{stud.id}} </td>
+          <td> {{stud.fname }}</td>
+          <td> {{stud.email}}</td>
+          <td> {{stud.phone}}</td>
+          <td> {{stud.address}} </td>
+          
+          <td>  
+            <button routerLink="/editStud/{{stud.id}}" class="btn btn-info mr-2"> Edit </button>
+            <button class="btn btn-outline-danger" (click)="deletstudent(stud.id)"> Delet</button>
+          </td>
+      
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
